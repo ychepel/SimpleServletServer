@@ -1,5 +1,5 @@
 package com.univer.simpleservletserver;
 
 public enum CalculatorOperation {
-    add, sub, mul, div;
+    ADD, SUB, MUL, DIV;
 }

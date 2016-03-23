@@ -15,19 +15,19 @@ public class Calculator {
         Double result;
 
         switch (operation) {
-            case add: {
+            case ADD: {
                 result = operand1 + operand2;
                 break;
             }
-            case sub: {
+            case SUB: {
                 result = operand1 - operand2;
                 break;
             }
-            case mul: {
+            case MUL: {
                 result = operand1 * operand2;
                 break;
             }
-            case div: {
+            case DIV: {
                 result = operand1 / operand2;
                 break;
             }
