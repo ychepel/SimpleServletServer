@@ -8,12 +8,14 @@
 }
 #center {
     float: left;
+    padding-top: 25%;
+    width: 50%;
+    text-align: center;
 }	
 #right {
     position: fixed;
     right: 0;
     top: 0;
-    text-align: center;
     width: 25%;
 }
 #left th {
@@ -32,4 +34,10 @@
 }
 #right .calc {
     border: dotted 1px #000000;
+    background: #DDDDE6;
+    margin: 5px;
+    padding: 10px;
+}
+#right .calc p {
+    padding-top: 10px;
 }
