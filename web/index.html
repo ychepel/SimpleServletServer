@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Three containers</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="left">
+            <table>
+                <thead><tr><th>Selector</th><th>Example</th></tr></thead>
+                <tbody>
+                    <tr><td>.class</td><td>.intro</td></tr>
+                    <tr><td>#id</td><td>#firstname</td></tr>
+                    <tr><td>*</td><td>*</td></tr>
+                    <tr><td>element</td><td>p</td></tr>
+                    <tr><td>element,element</td><td>div, p</td></tr>
+                    <tr><td>element element</td><td>div p</td></tr>
+                    <tr><td>element>element</td><td>div > p</td></tr>
+                    <tr><td>element+element</td><td>div + p</td></tr>
+                    <tr><td>element1~element2</td><td>p ~ ul</td></tr>
+                    <tr><td>[attribute]</td><td>[target]</td></tr>
+                    <tr><td>[attribute=value]</td><td>[target=_blank]</td></tr>
+                    <tr><td>[attribute~=value]</td><td>[title~=flower]</td></tr>
+                    <tr><td>[attribute|=value]</td><td>[lang|=en]</td></tr>
+                    <tr><td>[attribute^=value]</td><td>a[href^="https"]</td></tr>
+                    <tr><td>[attribute$=value]</td><td>a[href$=".pdf"]</td></tr>
+                    <tr><td>[attribute*=value]</td><td>a[href*="w3schools"]</td></tr>
+                    <tr><td>:active</td><td>a:active</td></tr>
+                    <tr><td>::after</td><td>p::after</td></tr>
+                    <tr><td>::before</td><td>p::before</td></tr>
+                    <tr><td>:checked</td><td>input:checked</td></tr>
+                    <tr><td>:disabled</td><td>input:disabled</td></tr>
+                    <tr><td>:empty</td><td>p:empty</td></tr>
+                    <tr><td>:enabled</td><td>input:enabled</td></tr>
+                    <tr><td>:first-child</td><td>p:first-child</td></tr>
+                    <tr><td>::first-letter</td><td>p::first-letter</td></tr>
+                    <tr><td>::first-line</td><td>p::first-line</td></tr>
+                    <tr><td>:first-of-type</td><td>p:first-of-type</td></tr>
+                    <tr><td>:focus</td><td>input:focus</td></tr>
+                    <tr><td>:hover</td><td>a:hover</td></tr>
+                    <tr><td>:in-range</td><td>input:in-range</td></tr>
+                    <tr><td>:invalid</td><td>input:invalid</td></tr>
+                    <tr><td>:lang(language)</td><td>p:lang(it)</td></tr>
+                    <tr><td>:last-child</td><td>p:last-child</td></tr>
+                    <tr><td>:last-of-type</td><td>p:last-of-type</td></tr>
+                    <tr><td>:link</td><td>a:link</td></tr>
+                    <tr><td>:not(selector)</td><td>:not(p)</td></tr>
+                    <tr><td>:nth-child(n)</td><td>p:nth-child(2)</td></tr>
+                    <tr><td>:nth-last-child(n)</td><td>p:nth-last-child(2)</td></tr>
+                    <tr><td>:nth-last-of-type(n)</td><td>p:nth-last-of-type(2)</td></tr>
+                    <tr><td>:nth-of-type(n)</td><td>p:nth-of-type(2)</td></tr>
+                    <tr><td>:only-of-type</td><td>p:only-of-type</td></tr>
+                    <tr><td>:only-child</td><td>p:only-child</td></tr>
+                    <tr><td>:optional</td><td>input:optional</td></tr>
+                    <tr><td>:out-of-range</td><td>input:out-of-range</td></tr>
+                    <tr><td>:read-only</td><td>input:read-only</td></tr>
+                    <tr><td>:read-write</td><td>input:read-write</td></tr>
+                    <tr><td>:required</td><td>input:required</td></tr>
+                    <tr><td>:root</td><td>:root</td></tr>
+                    <tr><td>::selection</td><td>::selection</td></tr>
+                    <tr><td>:target</td><td>#news:target</td></tr>
+                    <tr><td>:valid</td><td>input:valid</td></tr>
+                    <tr><td>:visited</td><td>a:visited</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="center">
+            <div class="content">
+	            <img src="java.png">
+	        </div>
+        </div>
+        <div id="right">
+                <div class="calc">
+		            <form action="calculate" method="get">
+			            <h1>Web-Calculator</h1>
+	                    <input type="radio" name="operation" value="add">addition<br />
+                	    <input type="radio" name="operation" value="mul">multiplication<br />
+	                    <input type="radio" name="operation" value="div">division<br />
+                	    <input type="radio" name="operation" value="sub">subtraction<br />
+	                    <p><input name="operand1" size="5">
+                	    <input name="operand2" size="5"></p>
+	                    <p><input type="submit" value="Calculate"></p>
+                	</form>
+            	</div>
+        </div>
+    </body>
+</html>
