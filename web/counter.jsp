@@ -10,6 +10,13 @@
     <%=request.getAttribute("title2")%>
     <%=count++%>
 
-    <c:forEach></c:forEach>
+    <table style="border: 1px solid gray">
+        <c:forEach var="user" items="${users}">
+            <tr>
+                <td>${user.name}</td>
+                <td>${user.age}</td>
+            </tr>
+        </c:forEach>
+    </table>
 </body>
 </html>
