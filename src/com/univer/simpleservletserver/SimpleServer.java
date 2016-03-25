@@ -14,10 +14,10 @@ public class SimpleServer extends HttpServlet {
         double operand1;
         double operand2;
         try {
-            operation = CalculatorOperation.valueOf(req.getParameter("operation"));
+            operation = CalculatorOperation.findByCommand(req.getParameter("operation"));
             operand1 = Double.parseDouble(req.getParameter("operand1"));
             operand2 = Double.parseDouble(req.getParameter("operand2"));
-        } catch (IllegalArgumentException|NullPointerException e) {
+        } catch (IllegalArgumentException e) {
             throw new UnsupportedOperationException("Wrong url-parameters.", e);
         }
 
